@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FOX Assistente Virtual | Gestão simples para pequenos negócios</title>
-  <meta name="description" content="Organize vendas, estoque, clientes e financeiro em um único lugar com a Fox Assistente Virtual." />
+  <meta name="description"
+    content="Organize vendas, estoque, clientes e financeiro em um único lugar com a Fox Assistente Virtual." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
@@ -59,9 +60,11 @@
     ::-webkit-scrollbar {
       width: 6px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--bg);
     }
+
     ::-webkit-scrollbar-thumb {
       background: var(--red);
       border-radius: 10px;
@@ -69,8 +72,15 @@
     }
 
     @keyframes pulse-glow-red {
-      0%, 100% { box-shadow: 0 0 10px rgba(239,68,68,0.3); }
-      50% { box-shadow: 0 0 20px rgba(239,68,68,0.6); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+      }
     }
 
     /* ─── Container ─── */
@@ -97,31 +107,38 @@
       color: var(--red);
       transition: all 0.3s;
     }
+
     .badge:hover {
       transform: scale(1.05);
       box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
     }
+
     .badge-blue {
       background: rgba(59, 130, 246, 0.12);
       border-color: rgba(59, 130, 246, 0.27);
       color: var(--blue);
     }
+
     .badge-blue:hover {
       box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
     }
+
     .badge-green {
       background: rgba(16, 185, 129, 0.12);
       border-color: rgba(16, 185, 129, 0.27);
       color: var(--green);
     }
+
     .badge-green:hover {
       box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
     }
+
     .badge-purple {
       background: rgba(139, 92, 246, 0.12);
       border-color: rgba(139, 92, 246, 0.27);
       color: var(--purple);
     }
+
     .badge-purple:hover {
       box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
     }
@@ -144,6 +161,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .btn-primary::after {
       content: '';
       position: absolute;
@@ -155,13 +173,16 @@
       z-index: -1;
       filter: blur(4px);
     }
+
     .btn-primary:hover {
       transform: translateY(-4px) scale(1.02);
       box-shadow: 0 16px 40px rgba(239, 68, 68, 0.6);
     }
+
     .btn-primary:hover::after {
       opacity: 1;
     }
+
     .btn-primary:active {
       transform: scale(0.97);
     }
@@ -181,12 +202,14 @@
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       position: relative;
     }
+
     .btn-outline:hover {
       background: var(--red);
       color: var(--bg);
       transform: translateY(-3px) scale(1.02);
       box-shadow: 0 8px 30px rgba(239, 68, 68, 0.3);
     }
+
     .btn-outline:active {
       transform: scale(0.97);
     }
@@ -200,6 +223,7 @@
       margin-bottom: 0.5rem;
       animation: fade-slide-up 0.8s ease both;
     }
+
     .section-sub {
       color: var(--muted);
       max-width: 700px;
@@ -217,6 +241,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .card::before {
       content: '';
       position: absolute;
@@ -229,17 +254,21 @@
       transition: opacity 0.5s;
       pointer-events: none;
     }
+
     .card:hover {
       transform: translateY(-8px) scale(1.01);
       box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 40px rgba(239, 68, 68, 0.05);
       border-color: rgba(239, 68, 68, 0.3);
     }
+
     .card:hover::before {
       opacity: 1;
     }
+
     .card .icon-wrap {
       transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
     .card:hover .icon-wrap {
       transform: scale(1.15) rotate(-5deg);
     }
@@ -250,9 +279,19 @@
       background-size: 28px 28px;
       animation: grid-pulse 8s ease-in-out infinite;
     }
+
     @keyframes grid-pulse {
-      0%, 100% { background-size: 28px 28px; opacity: 1; }
-      50% { background-size: 32px 32px; opacity: 0.7; }
+
+      0%,
+      100% {
+        background-size: 28px 28px;
+        opacity: 1;
+      }
+
+      50% {
+        background-size: 32px 32px;
+        opacity: 0.7;
+      }
     }
 
     /* ─── Gradient text ─── */
@@ -264,10 +303,19 @@
       background-size: 200% 200%;
       animation: gradient-shift 6s ease-in-out infinite;
     }
+
     @keyframes gradient-shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* ─── Glow helpers ─── */
@@ -275,9 +323,17 @@
       box-shadow: 0 0 30px rgba(239, 68, 68, 0.2), 0 0 60px rgba(239, 68, 68, 0.05);
       animation: glow-pulse-red 3s ease-in-out infinite;
     }
+
     @keyframes glow-pulse-red {
-      0%, 100% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.2), 0 0 60px rgba(239, 68, 68, 0.05); }
-      50% { box-shadow: 0 0 50px rgba(239, 68, 68, 0.35), 0 0 80px rgba(239, 68, 68, 0.1); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 30px rgba(239, 68, 68, 0.2), 0 0 60px rgba(239, 68, 68, 0.05);
+      }
+
+      50% {
+        box-shadow: 0 0 50px rgba(239, 68, 68, 0.35), 0 0 80px rgba(239, 68, 68, 0.1);
+      }
     }
 
     /* ─── Progress bar ─── */
@@ -304,6 +360,7 @@
       padding: 1.2rem 0;
       transition: background 0.4s, backdrop-filter 0.4s, padding 0.4s, box-shadow 0.4s;
     }
+
     .navbar.scrolled {
       background: rgba(6, 11, 20, 0.93);
       backdrop-filter: blur(20px);
@@ -311,6 +368,7 @@
       border-bottom: 1px solid var(--border);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     }
+
     .navbar .inner {
       display: flex;
       align-items: center;
@@ -319,6 +377,7 @@
       margin: 0 auto;
       padding: 0 1.5rem;
     }
+
     .logo {
       display: flex;
       align-items: center;
@@ -328,9 +387,11 @@
       font-size: 1.1rem;
       transition: transform 0.3s;
     }
+
     .logo:hover {
       transform: scale(1.02);
     }
+
     .logo-icon {
       width: 2rem;
       height: 2rem;
@@ -343,9 +404,15 @@
       font-size: 1.2rem;
       animation: rotate-slow 10s linear infinite;
     }
+
     @keyframes rotate-slow {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     /* ─── Nav links ─── */
@@ -357,14 +424,17 @@
       font-size: 0.9rem;
       font-weight: 500;
     }
+
     .nav-links a {
       color: var(--muted);
       transition: color 0.3s;
       position: relative;
     }
+
     .nav-links a:hover {
       color: var(--text);
     }
+
     .nav-links a::after {
       content: '';
       position: absolute;
@@ -375,9 +445,11 @@
       background: var(--red);
       transition: width 0.3s;
     }
+
     .nav-links a:hover::after {
       width: 100%;
     }
+
     .nav-links .btn-primary {
       padding: 0.5rem 1.2rem;
       font-size: 0.8rem;
@@ -393,6 +465,7 @@
       border: none;
       padding: 0.3rem;
     }
+
     .hamburger span {
       display: block;
       width: 25px;
@@ -401,15 +474,19 @@
       transition: 0.3s;
       border-radius: 2px;
     }
+
     .hamburger.open span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
     }
+
     .hamburger.open span:nth-child(2) {
       opacity: 0;
     }
+
     .hamburger.open span:nth-child(3) {
       transform: rotate(-45deg) translate(5px, -5px);
     }
+
     .mobile-menu {
       display: none;
       flex-direction: column;
@@ -427,9 +504,11 @@
       border-bottom: 1px solid var(--border);
       animation: fade-slide-up 0.3s ease both;
     }
+
     .mobile-menu.open {
       display: flex;
     }
+
     .mobile-menu a {
       color: var(--muted);
       font-weight: 500;
@@ -437,9 +516,11 @@
       transition: color 0.3s;
       padding: 0.3rem 0;
     }
+
     .mobile-menu a:hover {
       color: var(--text);
     }
+
     .mobile-menu .btn-primary {
       width: 100%;
       justify-content: center;
@@ -451,6 +532,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero .glow1 {
       position: absolute;
       top: 10%;
@@ -462,6 +544,7 @@
       pointer-events: none;
       animation: float-glow 8s ease-in-out infinite;
     }
+
     .hero .glow2 {
       position: absolute;
       bottom: 0;
@@ -473,10 +556,19 @@
       pointer-events: none;
       animation: float-glow 10s ease-in-out infinite reverse;
     }
+
     @keyframes float-glow {
-      0%, 100% { transform: translate(0,0) scale(1); }
-      50% { transform: translate(20px, -20px) scale(1.1); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(20px, -20px) scale(1.1);
+      }
     }
+
     .hero-content {
       display: flex;
       flex-direction: column;
@@ -484,6 +576,7 @@
       position: relative;
       z-index: 2;
     }
+
     @media (min-width: 768px) {
       .hero-content {
         flex-direction: row;
@@ -501,14 +594,24 @@
       transition: transform 0.4s, box-shadow 0.4s;
       animation: float-card 6s ease-in-out infinite;
     }
+
     .mock-dash:hover {
       transform: translateY(-5px) scale(1.01);
       box-shadow: 0 20px 60px rgba(239, 68, 68, 0.15);
     }
+
     @keyframes float-card {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
     }
+
     .mock-dash .title-bar {
       background: var(--cardAlt);
       padding: 0.7rem 1rem;
@@ -517,33 +620,48 @@
       gap: 0.5rem;
       border-bottom: 1px solid var(--border);
     }
+
     .mock-dash .title-bar .dot {
       width: 0.6rem;
       height: 0.6rem;
       border-radius: 50%;
       transition: transform 0.3s;
     }
+
     .mock-dash .title-bar .dot:hover {
       transform: scale(1.5);
     }
-    .mock-dash .title-bar .dot.red { background: var(--red); }
-    .mock-dash .title-bar .dot.yellow { background: #F59E0B; }
-    .mock-dash .title-bar .dot.green { background: var(--green); }
+
+    .mock-dash .title-bar .dot.red {
+      background: var(--red);
+    }
+
+    .mock-dash .title-bar .dot.yellow {
+      background: #F59E0B;
+    }
+
+    .mock-dash .title-bar .dot.green {
+      background: var(--green);
+    }
+
     .mock-dash .title-bar span {
       font-family: 'Space Mono', monospace;
       font-size: 0.7rem;
       color: var(--dimmed);
       margin-left: 0.5rem;
     }
+
     .mock-dash .body {
       padding: 1.2rem;
     }
+
     .mock-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0.75rem;
       margin-bottom: 1rem;
     }
+
     .mock-card {
       background: var(--cardAlt);
       border-radius: 0.5rem;
@@ -551,21 +669,25 @@
       border: 1px solid var(--border);
       transition: border-color 0.3s, transform 0.3s;
     }
+
     .mock-card:hover {
       border-color: var(--red);
       transform: scale(1.02);
     }
+
     .mock-card .label {
       font-family: 'Space Mono', monospace;
       font-size: 0.65rem;
       color: var(--muted);
     }
+
     .mock-card .value {
       font-family: 'Space Mono', monospace;
       font-weight: 700;
       font-size: 1.6rem;
       color: var(--text);
     }
+
     .mock-card .trend {
       display: inline-flex;
       align-items: center;
@@ -575,10 +697,19 @@
       font-weight: 700;
       animation: pulse-text 2s infinite;
     }
+
     @keyframes pulse-text {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.6;
+      }
     }
+
     .mock-bar-chart {
       height: 2.5rem;
       display: flex;
@@ -586,6 +717,7 @@
       gap: 0.2rem;
       margin-top: 0.3rem;
     }
+
     .mock-bar {
       flex: 1;
       border-radius: 2px 2px 0 0;
@@ -595,10 +727,19 @@
       height: 0%;
       animation: bar-grow 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     }
+
     @keyframes bar-grow {
-      0% { height: 0%; opacity: 0; }
-      100% { height: var(--h); opacity: 0.7; }
+      0% {
+        height: 0%;
+        opacity: 0;
+      }
+
+      100% {
+        height: var(--h);
+        opacity: 0.7;
+      }
     }
+
     .fox-badge-hero {
       display: inline-flex;
       align-items: center;
@@ -612,6 +753,7 @@
       color: var(--redLight);
       margin-top: 1rem;
     }
+
     .fox-badge-hero i {
       font-size: 1.2rem;
     }
@@ -628,10 +770,19 @@
       margin-bottom: 1rem;
       animation: alert-pulse 2s ease-in-out infinite;
     }
+
     @keyframes alert-pulse {
-      0%, 100% { border-color: rgba(239, 68, 68, 0.27); }
-      50% { border-color: rgba(239, 68, 68, 0.6); }
+
+      0%,
+      100% {
+        border-color: rgba(239, 68, 68, 0.27);
+      }
+
+      50% {
+        border-color: rgba(239, 68, 68, 0.6);
+      }
     }
+
     .alert-box .icon {
       color: var(--red);
       font-size: 0.9rem;
@@ -639,11 +790,25 @@
       margin-top: 0.1rem;
       animation: shake 2s infinite;
     }
+
     @keyframes shake {
-      0%, 100% { transform: rotate(0deg); }
-      5% { transform: rotate(10deg); }
-      10% { transform: rotate(-10deg); }
-      15% { transform: rotate(0deg); }
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      5% {
+        transform: rotate(10deg);
+      }
+
+      10% {
+        transform: rotate(-10deg);
+      }
+
+      15% {
+        transform: rotate(0deg);
+      }
     }
 
     /* ─── Steps (Como funciona) ─── */
@@ -655,6 +820,7 @@
       color: var(--redLight);
       transition: opacity 0.3s, transform 0.3s;
     }
+
     .step-number:hover {
       opacity: 0.5;
       transform: scale(1.1);
@@ -666,6 +832,7 @@
       display: grid;
       gap: 0.4rem;
     }
+
     .step-detail-list li {
       display: flex;
       align-items: center;
@@ -673,6 +840,7 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
+
     .step-detail-list li i {
       color: var(--red);
       font-size: 0.8rem;
@@ -688,11 +856,13 @@
       transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
       animation: fade-slide-up 0.7s ease both;
     }
+
     .three-step:hover {
       transform: translateY(-8px) scale(1.02);
       border-color: var(--red);
       box-shadow: 0 12px 40px rgba(239, 68, 68, 0.1);
     }
+
     .three-step .time {
       font-family: 'Space Mono', monospace;
       font-size: 0.75rem;
@@ -704,14 +874,22 @@
       margin-top: 0.8rem;
       transition: background 0.3s, transform 0.3s;
     }
+
     .three-step:hover .time {
       background: rgba(239, 68, 68, 0.3);
       transform: scale(1.05);
     }
 
     @keyframes fade-slide-up {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* ─── Sistema (mockups) ─── */
@@ -720,16 +898,19 @@
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     @media (min-width: 768px) {
       .system-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+
     @media (min-width: 1024px) {
       .system-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
     .system-card {
       background: var(--card);
       border-radius: var(--radius);
@@ -738,21 +919,25 @@
       text-align: center;
       transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
     .system-card:hover {
       transform: translateY(-6px);
       border-color: var(--red);
       box-shadow: 0 12px 40px rgba(239, 68, 68, 0.08);
     }
+
     .system-card .icon {
       font-size: 2.5rem;
       color: var(--red);
       margin-bottom: 0.5rem;
     }
+
     .system-card h4 {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 600;
       margin-bottom: 0.3rem;
     }
+
     .system-card p {
       color: var(--muted);
       font-size: 0.9rem;
@@ -763,6 +948,7 @@
       position: relative;
       padding: 2rem 0;
     }
+
     .flow-line {
       position: absolute;
       top: 3.5rem;
@@ -772,6 +958,7 @@
       background: var(--border);
       z-index: 0;
     }
+
     .flow-line-progress {
       height: 100%;
       width: 0%;
@@ -779,9 +966,11 @@
       transition: width 1.8s cubic-bezier(0.34, 1.56, 0.64, 1);
       box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
     }
+
     .flow-line-progress.animated {
       width: 100%;
     }
+
     .flow-steps {
       display: flex;
       flex-wrap: wrap;
@@ -790,6 +979,7 @@
       z-index: 1;
       gap: 0.5rem;
     }
+
     .flow-step-item {
       flex: 1 1 100px;
       min-width: 120px;
@@ -804,14 +994,31 @@
       transform: translateY(15px);
       animation: fade-slide-up 0.6s ease forwards;
     }
-    .flow-step-item:nth-child(1) { animation-delay: 0.1s; }
-    .flow-step-item:nth-child(2) { animation-delay: 0.25s; }
-    .flow-step-item:nth-child(3) { animation-delay: 0.40s; }
-    .flow-step-item:nth-child(4) { animation-delay: 0.55s; }
-    .flow-step-item:nth-child(5) { animation-delay: 0.70s; }
+
+    .flow-step-item:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .flow-step-item:nth-child(2) {
+      animation-delay: 0.25s;
+    }
+
+    .flow-step-item:nth-child(3) {
+      animation-delay: 0.40s;
+    }
+
+    .flow-step-item:nth-child(4) {
+      animation-delay: 0.55s;
+    }
+
+    .flow-step-item:nth-child(5) {
+      animation-delay: 0.70s;
+    }
+
     .flow-step-item:hover {
       transform: translateY(-4px) scale(1.03);
     }
+
     .flow-step-item .step-circle {
       width: 3rem;
       height: 3rem;
@@ -830,15 +1037,18 @@
       position: relative;
       z-index: 2;
     }
+
     .flow-step-item:hover .step-circle {
       border-color: var(--red);
       box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
       transform: scale(1.1);
     }
+
     .flow-step-item .step-circle .num {
       color: var(--red);
       font-size: 0.8rem;
     }
+
     .flow-step-item .step-label {
       font-weight: 600;
       font-size: 0.8rem;
@@ -846,6 +1056,7 @@
       line-height: 1.3;
       margin-bottom: 0.15rem;
     }
+
     .flow-step-item .step-tag {
       font-family: 'Space Mono', monospace;
       font-size: 0.6rem;
@@ -856,33 +1067,41 @@
       display: inline-block;
       transition: background 0.3s;
     }
+
     .flow-step-item:hover .step-tag {
       background: rgba(239, 68, 68, 0.25);
     }
+
     .flow-result {
       margin-top: 2.5rem;
       display: inline-block;
       padding: 0.8rem 2.5rem;
       border-radius: var(--radius);
-      background: rgba(16,185,129,0.12);
-      border: 1px solid rgba(16,185,129,0.3);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       color: var(--greenLight);
       font-size: 1.1rem;
       transition: all 0.3s;
     }
+
     .flow-result:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 30px rgba(16,185,129,0.15);
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
     }
+
     @media (max-width: 768px) {
-      .flow-line { display: none; }
+      .flow-line {
+        display: none;
+      }
+
       .flow-steps {
         flex-direction: column;
         align-items: center;
         gap: 1.2rem;
       }
+
       .flow-step-item {
         flex: 1 1 auto;
         width: 100%;
@@ -891,10 +1110,12 @@
         gap: 1rem;
         text-align: left;
       }
+
       .flow-step-item .step-circle {
         margin-bottom: 0;
         flex-shrink: 0;
       }
+
       .flow-step-item .step-info {
         display: flex;
         flex-direction: column;
@@ -907,16 +1128,19 @@
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     @media (min-width: 768px) {
       .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+
     @media (min-width: 1024px) {
       .testimonials-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
     .testimonial {
       background: var(--card);
       border-radius: var(--radius);
@@ -927,21 +1151,32 @@
       display: flex;
       flex-direction: column;
     }
+
     .testimonial:hover {
       transform: translateY(-6px) scale(1.01);
       border-color: var(--red);
       box-shadow: 0 12px 40px rgba(239, 68, 68, 0.05);
     }
+
     .testimonial .stars {
       color: #F59E0B;
       font-size: 0.9rem;
       margin-bottom: 0.5rem;
       animation: star-pulse 2s infinite;
     }
+
     @keyframes star-pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
     }
+
     .testimonial .text {
       font-style: italic;
       color: var(--muted);
@@ -950,13 +1185,16 @@
       transition: color 0.3s;
       flex-grow: 1;
     }
+
     .testimonial:hover .text {
       color: var(--text);
     }
+
     .testimonial .name {
       font-weight: 700;
       color: var(--text);
     }
+
     .testimonial .role {
       font-size: 0.75rem;
       color: var(--muted);
@@ -967,6 +1205,7 @@
       max-width: 600px;
       margin: 0 auto;
     }
+
     .plan-single {
       background: var(--card);
       border-radius: var(--radius);
@@ -976,14 +1215,24 @@
       animation: premium-glow-red 3s ease-in-out infinite;
       transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
     .plan-single:hover {
       transform: scale(1.02) translateY(-6px);
       box-shadow: 0 0 60px rgba(239, 68, 68, 0.2);
     }
+
     @keyframes premium-glow-red {
-      0%, 100% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.1); }
-      50% { box-shadow: 0 0 60px rgba(239, 68, 68, 0.25); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 40px rgba(239, 68, 68, 0.1);
+      }
+
+      50% {
+        box-shadow: 0 0 60px rgba(239, 68, 68, 0.25);
+      }
     }
+
     .plan-single .badge-top {
       display: inline-block;
       background: linear-gradient(135deg, var(--red), #EA580C);
@@ -998,31 +1247,45 @@
       margin-bottom: 1rem;
       animation: badge-float 2s ease-in-out infinite;
     }
+
     @keyframes badge-float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
     }
+
     .plan-single .price {
       font-family: 'Space Mono', monospace;
     }
+
     .plan-single .price .new {
       font-size: 3.2rem;
       font-weight: 700;
       color: var(--text);
       transition: color 0.3s;
     }
+
     .plan-single:hover .price .new {
       color: var(--redLight);
     }
+
     .plan-single .price .cents {
       font-size: 1.4rem;
       color: var(--muted);
     }
+
     .plan-single .price .period {
       font-size: 1rem;
       color: var(--muted);
       font-weight: 400;
     }
+
     .plan-single ul {
       list-style: none;
       margin: 1.8rem 0;
@@ -1031,11 +1294,13 @@
       grid-template-columns: 1fr 1fr;
       gap: 0.5rem 1.5rem;
     }
+
     @media (max-width: 500px) {
       .plan-single ul {
         grid-template-columns: 1fr;
       }
     }
+
     .plan-single ul li {
       display: flex;
       align-items: center;
@@ -1045,24 +1310,29 @@
       color: var(--muted);
       transition: color 0.3s, padding-left 0.3s;
     }
+
     .plan-single ul li:hover {
       color: var(--text);
       padding-left: 0.3rem;
     }
+
     .plan-single ul li i {
       color: var(--green);
       width: 1.1rem;
       transition: transform 0.3s;
     }
+
     .plan-single ul li:hover i {
       transform: scale(1.2);
     }
+
     .plan-single .btn {
       width: 100%;
       justify-content: center;
       padding: 1rem;
       font-size: 1.1rem;
     }
+
     .bonus-course {
       margin-top: 2rem;
       background: var(--cardAlt);
@@ -1075,24 +1345,29 @@
       align-items: center;
       flex-wrap: wrap;
     }
+
     .bonus-course i {
       font-size: 2.5rem;
       color: var(--red);
       flex-shrink: 0;
     }
+
     .bonus-course .content {
       flex: 1;
     }
+
     .bonus-course .content h4 {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       color: var(--text);
     }
+
     .bonus-course .content p {
       color: var(--muted);
       font-size: 0.9rem;
       margin-top: 0.2rem;
     }
+
     .bonus-course .content .highlight {
       color: var(--redLight);
       font-weight: 600;
@@ -1106,10 +1381,12 @@
       transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
       animation: fade-slide-up 0.6s ease both;
     }
+
     .faq-item.open {
       border-color: rgba(239, 68, 68, 0.4);
       box-shadow: 0 0 30px rgba(239, 68, 68, 0.05);
     }
+
     .faq-item .question {
       width: 100%;
       background: var(--cardAlt);
@@ -1124,20 +1401,25 @@
       cursor: pointer;
       transition: background 0.3s, color 0.3s;
     }
+
     .faq-item .question:hover {
       background: var(--card);
       color: var(--redLight);
     }
+
     .faq-item .question i {
       transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
       color: var(--red);
     }
+
     .faq-item.open .question i {
       transform: rotate(180deg);
     }
+
     .faq-item .question:hover i {
       color: #EA580C;
     }
+
     .faq-item .answer {
       padding: 0 1.5rem 1.2rem;
       color: var(--muted);
@@ -1145,6 +1427,7 @@
       display: none;
       animation: fade-slide-up 0.3s ease both;
     }
+
     .faq-item.open .answer {
       display: block;
     }
@@ -1155,6 +1438,7 @@
       border-top: 1px solid var(--border);
       padding: 3rem 1.5rem 1.5rem;
     }
+
     footer .inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -1162,11 +1446,13 @@
       grid-template-columns: 1fr;
       gap: 2rem;
     }
+
     @media (min-width: 768px) {
       footer .inner {
         grid-template-columns: 2fr 1fr 1fr;
       }
     }
+
     footer .brand {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
@@ -1175,13 +1461,16 @@
       align-items: center;
       gap: 0.6rem;
     }
+
     footer .brand i {
       color: var(--red);
       transition: transform 0.3s;
     }
+
     footer .brand:hover i {
       transform: rotate(-10deg) scale(1.1);
     }
+
     footer .links a {
       display: block;
       padding: 0.3rem 0;
@@ -1189,10 +1478,12 @@
       transition: color 0.3s, padding-left 0.3s;
       font-size: 0.9rem;
     }
+
     footer .links a:hover {
       color: var(--red);
       padding-left: 0.5rem;
     }
+
     footer .social a {
       display: inline-flex;
       align-items: center;
@@ -1205,12 +1496,14 @@
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       margin-right: 0.5rem;
     }
+
     footer .social a:hover {
       border-color: var(--red);
       color: var(--red);
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15);
     }
+
     footer .copy {
       grid-column: 1 / -1;
       text-align: center;
@@ -1222,38 +1515,82 @@
       margin-top: 1rem;
       transition: color 0.3s;
     }
+
     footer .copy:hover {
       color: var(--muted);
     }
 
     /* ─── Responsive utilities ─── */
-    .text-center { text-align: center; }
-    .mt-2 { margin-top: 0.5rem; }
-    .mt-4 { margin-top: 1rem; }
-    .mt-8 { margin-top: 2rem; }
-    .mt-12 { margin-top: 3rem; }
-    .mb-4 { margin-bottom: 1rem; }
-    .mb-8 { margin-bottom: 2rem; }
-    .mb-12 { margin-bottom: 3rem; }
-    .gap-4 { gap: 1rem; }
-    .gap-6 { gap: 1.5rem; }
-    .flex-wrap { display: flex; flex-wrap: wrap; justify-content: center; }
-    .flex-center { display: flex; align-items: center; justify-content: center; }
+    .text-center {
+      text-align: center;
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+
+    .mt-4 {
+      margin-top: 1rem;
+    }
+
+    .mt-8 {
+      margin-top: 2rem;
+    }
+
+    .mt-12 {
+      margin-top: 3rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-12 {
+      margin-bottom: 3rem;
+    }
+
+    .gap-4 {
+      gap: 1rem;
+    }
+
+    .gap-6 {
+      gap: 1.5rem;
+    }
+
+    .flex-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     @media (min-width: 768px) {
       .grid-2 {
         grid-template-columns: 1fr 1fr;
       }
     }
+
     .grid-3 {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     @media (min-width: 768px) {
       .grid-3 {
         grid-template-columns: repeat(3, 1fr);
@@ -1266,20 +1603,51 @@
       transform: translateY(30px) scale(0.96);
       transition: opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
     .reveal.visible {
       opacity: 1;
       transform: translateY(0) scale(1);
     }
-    .reveal:nth-child(1) { transition-delay: 0.05s; }
-    .reveal:nth-child(2) { transition-delay: 0.12s; }
-    .reveal:nth-child(3) { transition-delay: 0.19s; }
-    .reveal:nth-child(4) { transition-delay: 0.26s; }
-    .reveal:nth-child(5) { transition-delay: 0.33s; }
-    .reveal:nth-child(6) { transition-delay: 0.40s; }
-    .reveal:nth-child(7) { transition-delay: 0.47s; }
-    .reveal:nth-child(8) { transition-delay: 0.54s; }
-    .reveal:nth-child(9) { transition-delay: 0.61s; }
-    .reveal:nth-child(10) { transition-delay: 0.68s; }
+
+    .reveal:nth-child(1) {
+      transition-delay: 0.05s;
+    }
+
+    .reveal:nth-child(2) {
+      transition-delay: 0.12s;
+    }
+
+    .reveal:nth-child(3) {
+      transition-delay: 0.19s;
+    }
+
+    .reveal:nth-child(4) {
+      transition-delay: 0.26s;
+    }
+
+    .reveal:nth-child(5) {
+      transition-delay: 0.33s;
+    }
+
+    .reveal:nth-child(6) {
+      transition-delay: 0.40s;
+    }
+
+    .reveal:nth-child(7) {
+      transition-delay: 0.47s;
+    }
+
+    .reveal:nth-child(8) {
+      transition-delay: 0.54s;
+    }
+
+    .reveal:nth-child(9) {
+      transition-delay: 0.61s;
+    }
+
+    .reveal:nth-child(10) {
+      transition-delay: 0.68s;
+    }
 
     /* ─── Urgency section ─── */
     .urgency {
@@ -1288,9 +1656,17 @@
       padding: 3rem 1.5rem;
       animation: urgency-pulse 4s ease-in-out infinite;
     }
+
     @keyframes urgency-pulse {
-      0%, 100% { background: linear-gradient(135deg, rgba(239,68,68,0.15), rgba(234,88,12,0.15)); }
-      50% { background: linear-gradient(135deg, rgba(239,68,68,0.25), rgba(234,88,12,0.25)); }
+
+      0%,
+      100% {
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(234, 88, 12, 0.15));
+      }
+
+      50% {
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(234, 88, 12, 0.25));
+      }
     }
 
     /* ─── Vídeo ─── */
@@ -1303,15 +1679,18 @@
       max-width: 700px;
       margin: 0 auto;
     }
+
     .video-wrapper:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(239,68,68,0.08);
+      box-shadow: 0 12px 40px rgba(239, 68, 68, 0.08);
     }
+
     .video-wrapper video {
       width: 100%;
       display: block;
       background: #000;
     }
+
     .video-controls {
       display: flex;
       align-items: center;
@@ -1323,22 +1702,27 @@
       font-size: 0.75rem;
       color: var(--muted);
     }
+
     .video-controls .time {
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
+
     .video-controls .time i {
       color: var(--red);
       cursor: pointer;
       transition: color 0.3s;
     }
+
     .video-controls .time i:hover {
       color: var(--redLight);
     }
+
     .video-controls .duration {
       color: var(--dimmed);
     }
+
     .video-controls .play-btn {
       background: none;
       border: none;
@@ -1348,6 +1732,7 @@
       transition: color 0.3s, transform 0.2s;
       padding: 0 0.3rem;
     }
+
     .video-controls .play-btn:hover {
       color: var(--red);
       transform: scale(1.1);
@@ -1358,16 +1743,20 @@
       .nav-links {
         display: none;
       }
+
       .hamburger {
         display: flex;
       }
+
       .hero {
         padding: 6rem 0 2rem;
       }
+
       .plan-single ul {
         grid-template-columns: 1fr;
       }
     }
+
     @media (min-width: 769px) {
       .mobile-menu {
         display: none !important;
@@ -1391,6 +1780,7 @@
       z-index: 0;
       overflow: hidden;
     }
+
     .particle {
       position: absolute;
       width: 4px;
@@ -1400,23 +1790,119 @@
       opacity: 0.15;
       animation: particle-float 12s infinite linear;
     }
-    .particle:nth-child(1) { left: 10%; animation-duration: 14s; width: 3px; height: 3px; }
-    .particle:nth-child(2) { left: 20%; animation-duration: 16s; animation-delay: 1s; width: 5px; height: 5px; }
-    .particle:nth-child(3) { left: 30%; animation-duration: 12s; animation-delay: 2s; }
-    .particle:nth-child(4) { left: 40%; animation-duration: 18s; animation-delay: 0.5s; width: 6px; height: 6px; }
-    .particle:nth-child(5) { left: 50%; animation-duration: 15s; animation-delay: 1.5s; width: 3px; height: 3px; }
-    .particle:nth-child(6) { left: 60%; animation-duration: 13s; animation-delay: 3s; width: 5px; height: 5px; }
-    .particle:nth-child(7) { left: 70%; animation-duration: 17s; animation-delay: 0.8s; }
-    .particle:nth-child(8) { left: 80%; animation-duration: 11s; animation-delay: 2.5s; width: 3px; height: 3px; }
-    .particle:nth-child(9) { left: 90%; animation-duration: 19s; animation-delay: 1.2s; width: 5px; height: 5px; }
-    .particle:nth-child(10) { left: 15%; animation-duration: 20s; animation-delay: 0.3s; width: 6px; height: 6px; }
-    .particle:nth-child(11) { left: 45%; animation-duration: 14s; animation-delay: 2.8s; }
-    .particle:nth-child(12) { left: 75%; animation-duration: 16s; animation-delay: 1.8s; width: 3px; height: 3px; }
+
+    .particle:nth-child(1) {
+      left: 10%;
+      animation-duration: 14s;
+      width: 3px;
+      height: 3px;
+    }
+
+    .particle:nth-child(2) {
+      left: 20%;
+      animation-duration: 16s;
+      animation-delay: 1s;
+      width: 5px;
+      height: 5px;
+    }
+
+    .particle:nth-child(3) {
+      left: 30%;
+      animation-duration: 12s;
+      animation-delay: 2s;
+    }
+
+    .particle:nth-child(4) {
+      left: 40%;
+      animation-duration: 18s;
+      animation-delay: 0.5s;
+      width: 6px;
+      height: 6px;
+    }
+
+    .particle:nth-child(5) {
+      left: 50%;
+      animation-duration: 15s;
+      animation-delay: 1.5s;
+      width: 3px;
+      height: 3px;
+    }
+
+    .particle:nth-child(6) {
+      left: 60%;
+      animation-duration: 13s;
+      animation-delay: 3s;
+      width: 5px;
+      height: 5px;
+    }
+
+    .particle:nth-child(7) {
+      left: 70%;
+      animation-duration: 17s;
+      animation-delay: 0.8s;
+    }
+
+    .particle:nth-child(8) {
+      left: 80%;
+      animation-duration: 11s;
+      animation-delay: 2.5s;
+      width: 3px;
+      height: 3px;
+    }
+
+    .particle:nth-child(9) {
+      left: 90%;
+      animation-duration: 19s;
+      animation-delay: 1.2s;
+      width: 5px;
+      height: 5px;
+    }
+
+    .particle:nth-child(10) {
+      left: 15%;
+      animation-duration: 20s;
+      animation-delay: 0.3s;
+      width: 6px;
+      height: 6px;
+    }
+
+    .particle:nth-child(11) {
+      left: 45%;
+      animation-duration: 14s;
+      animation-delay: 2.8s;
+    }
+
+    .particle:nth-child(12) {
+      left: 75%;
+      animation-duration: 16s;
+      animation-delay: 1.8s;
+      width: 3px;
+      height: 3px;
+    }
+
     @keyframes particle-float {
-      0% { transform: translateY(100vh) rotate(0deg) scale(0); opacity: 0; }
-      10% { opacity: 0.15; }
-      90% { opacity: 0.15; }
-      100% { transform: translateY(-100vh) rotate(720deg) scale(1); opacity: 0; }
+      0% {
+        transform: translateY(100vh) rotate(0deg) scale(0);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.15;
+      }
+
+      90% {
+        opacity: 0.15;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(720deg) scale(1);
+        opacity: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
     }
   </style>
 </head>
@@ -1425,10 +1911,18 @@
 
   <!-- ─── Particles ─── -->
   <div class="particles" aria-hidden="true">
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
   </div>
 
   <!-- Progress Bar -->
@@ -1448,7 +1942,7 @@
         <li><a href="#demonstracao">Demonstração</a></li>
         <li><a href="#planos">Planos</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><button class="btn-primary" onclick="handleCheckout()">COMEÇAR AGORA</button></li>
+        <li><a href="https://pay.kiwify.com.br/9vnKpIq"><button class="btn-primary">COMEÇAR AGORA</button></a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -1464,7 +1958,8 @@
     <a href="#demonstracao" onclick="closeMobileMenu()">Demonstração</a>
     <a href="#planos" onclick="closeMobileMenu()">Planos</a>
     <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
-    <button class="btn-primary" onclick="handleCheckout(); closeMobileMenu();">COMEÇAR AGORA</button>
+    <a href="https://pay.kiwify.com.br/9vnKpIq"><button class="btn-primary">COMEÇAR AGORA</button></a>
+
   </div>
 
   <!-- ═══ HERO ═══ -->
@@ -1476,21 +1971,23 @@
         <div class="badge" style="animation: fade-slide-up 0.6s ease both;">
           <i class="fas fa-fox" style="font-size:1rem;"></i> ASSISTENTE VIRTUAL PARA PEQUENOS NEGÓCIOS
         </div>
-        <h1 class="section-title" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-top: 1.2rem; animation: fade-slide-up 0.7s ease 0.1s both;">
+        <h1 class="section-title"
+          style="font-size: clamp(2rem, 4vw, 3.5rem); margin-top: 1.2rem; animation: fade-slide-up 0.7s ease 0.1s both;">
           Seu negócio está crescendo.<br />
           <span class="gradient-text">Sua gestão também precisa crescer.</span>
         </h1>
-        <p style="color: var(--muted); font-size: 1.1rem; max-width: 36rem; margin: 1.2rem 0 2rem; animation: fade-slide-up 0.7s ease 0.2s both;">
+        <p
+          style="color: var(--muted); font-size: 1.1rem; max-width: 36rem; margin: 1.2rem 0 2rem; animation: fade-slide-up 0.7s ease 0.2s both;">
           Conheça a Fox, sua assistente virtual para organizar vendas, estoque, clientes e financeiro em um único lugar.
         </p>
         <div style="animation: fade-slide-up 0.7s ease 0.3s both;">
-          <button class="btn-primary" onclick="handleCheckout()">
-            COMEÇAR AGORA <i class="fas fa-arrow-right"></i>
-          </button>
-          <button class="btn-outline" style="margin-left: 1rem;" onclick="document.getElementById('como-funciona').scrollIntoView({behavior:'smooth'})">
+         
+          <button class="btn-outline" style="margin-left: 1rem;"
+            onclick="document.getElementById('como-funciona').scrollIntoView({behavior:'smooth'})">
             VER COMO FUNCIONA
           </button>
-          <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.5rem; color: var(--dimmed); font-size: 0.85rem;">
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.5rem; color: var(--dimmed); font-size: 0.85rem;">
             <span><i class="fas fa-shield-alt" style="color: var(--green);"></i> Gestão completa</span>
             <span><i class="fas fa-check-circle" style="color: var(--green);"></i> Fácil de usar</span>
             <span><i class="fas fa-bolt" style="color: var(--green);"></i> Resultado imediato</span>
@@ -1507,8 +2004,10 @@
           </div>
           <div class="body">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
-              <span style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted);">🦊 Assistente Virtual</span>
-              <span style="font-family:'Space Mono',monospace; font-size:0.6rem; color:var(--red); background:rgba(239,68,68,0.15); padding:0.2rem 0.6rem; border-radius:30px;">online</span>
+              <span style="font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted);">🦊 Assistente
+                Virtual</span>
+              <span
+                style="font-family:'Space Mono',monospace; font-size:0.6rem; color:var(--red); background:rgba(239,68,68,0.15); padding:0.2rem 0.6rem; border-radius:30px;">online</span>
             </div>
             <div class="mock-grid">
               <div class="mock-card">
@@ -1533,7 +2032,8 @@
             <div class="alert-box">
               <i class="fas fa-exclamation-triangle icon"></i>
               <div>
-                <div style="font-family: 'Space Mono', monospace; font-size:0.7rem; color: var(--red); font-weight:700;">
+                <div
+                  style="font-family: 'Space Mono', monospace; font-size:0.7rem; color: var(--red); font-weight:700;">
                   ALERTA: estoque_baixo
                 </div>
                 <div style="font-family: 'Space Mono', monospace; font-size:0.7rem; color: var(--muted);">
@@ -1542,7 +2042,8 @@
               </div>
             </div>
             <div>
-              <div style="font-family: 'Space Mono', monospace; font-size:0.65rem; color: var(--muted); margin-bottom:0.3rem;">
+              <div
+                style="font-family: 'Space Mono', monospace; font-size:0.65rem; color: var(--muted); margin-bottom:0.3rem;">
                 receita_semanal[]
               </div>
               <div class="mock-bar-chart" id="weeklyChart">
@@ -1565,42 +2066,56 @@
   <section style="padding:4rem 1.5rem; background: var(--bg); position:relative; overflow:hidden;">
     <div class="container">
       <div class="text-center mb-12">
-        <div class="badge" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-exclamation-triangle"></i> diagnóstico</div>
-        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Seu negócio não precisa ser complicado.</h2>
+        <div class="badge" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-exclamation-triangle"></i>
+          diagnóstico</div>
+        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Seu negócio não precisa ser
+          complicado.</h2>
         <p class="section-sub" style="font-size:1.05rem; animation: fade-slide-up 0.7s ease 0.2s both;">
           Mas a falta de organização pode estar travando seu crescimento.
         </p>
       </div>
       <div class="grid-3">
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-file-excel" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-file-excel"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Planilhas espalhadas</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Informações em várias planilhas, cadernos e anotações. Você perde tempo procurando dados.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Informações em várias planilhas, cadernos e anotações. Você
+            perde tempo procurando dados.</p>
         </div>
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-search" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-search"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Informações perdidas</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Clientes, produtos e históricos se perdem no meio do caminho, prejudicando o atendimento.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Clientes, produtos e históricos se perdem no meio do caminho,
+            prejudicando o atendimento.</p>
         </div>
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-boxes" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-boxes"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Estoque desatualizado</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Você compra produtos que já tem ou fica sem estoque, perdendo vendas e dinheiro.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Você compra produtos que já tem ou fica sem estoque, perdendo
+            vendas e dinheiro.</p>
         </div>
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-coins" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-coins"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Dificuldade para saber o lucro</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Você vende, mas não sabe ao certo quanto está lucrando. Os números não fecham.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Você vende, mas não sabe ao certo quanto está lucrando. Os
+            números não fecham.</p>
         </div>
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-users" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-users"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Clientes sem histórico</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Sem registro das compras, você não consegue fidelizar nem oferecer o que eles realmente querem.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Sem registro das compras, você não consegue fidelizar nem
+            oferecer o que eles realmente querem.</p>
         </div>
         <div class="card reveal">
-          <div class="icon-wrap"><i class="fas fa-eye" style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
+          <div class="icon-wrap"><i class="fas fa-eye"
+              style="font-size:1.8rem; color:var(--red); margin-bottom:0.5rem; display:block;"></i></div>
           <h3 style="font-family:'Space Grotesk',sans-serif;">Falta de visão do negócio</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Sem indicadores claros, você toma decisões no escuro e não sabe para onde seu negócio está indo.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Sem indicadores claros, você toma decisões no escuro e não
+            sabe para onde seu negócio está indo.</p>
         </div>
       </div>
     </div>
@@ -1610,7 +2125,8 @@
   <section style="padding:4rem 1.5rem; background: var(--cardAlt);">
     <div class="container">
       <div class="text-center mb-12">
-        <div class="badge badge-green" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-fox"></i> sua assistente</div>
+        <div class="badge badge-green" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-fox"></i> sua
+          assistente</div>
         <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Conheça a Fox.</h2>
         <p class="section-sub" style="font-size:1.05rem; animation: fade-slide-up 0.7s ease 0.2s both;">
           Uma assistente para ajudar você a cuidar da gestão.
@@ -1620,21 +2136,30 @@
         <div style="flex:1; min-width:280px; text-align:center;">
           <div style="font-size:6rem; filter:drop-shadow(0 0 30px rgba(239,68,68,0.2));">🦊</div>
           <p style="color:var(--muted); font-size:1.1rem; max-width:500px; margin:1rem auto;">
-            A Fox reúne as principais informações do seu negócio em um único lugar, ajudando você a acompanhar vendas, estoque, clientes e resultados.
+            A Fox reúne as principais informações do seu negócio em um único lugar, ajudando você a acompanhar vendas,
+            estoque, clientes e resultados.
           </p>
         </div>
         <div style="flex:1; min-width:280px; display:grid; gap:1rem;">
-          <div style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
-            <i class="fas fa-chart-simple" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Vendas</strong> – Registre e acompanhe cada venda.
+          <div
+            style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
+            <i class="fas fa-chart-simple" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Vendas</strong> –
+            Registre e acompanhe cada venda.
           </div>
-          <div style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
-            <i class="fas fa-cubes" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Estoque</strong> – Saiba exatamente o que tem.
+          <div
+            style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
+            <i class="fas fa-cubes" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Estoque</strong> – Saiba
+            exatamente o que tem.
           </div>
-          <div style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
-            <i class="fas fa-user" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Clientes</strong> – Histórico completo de compras.
+          <div
+            style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
+            <i class="fas fa-user" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Clientes</strong> –
+            Histórico completo de compras.
           </div>
-          <div style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
-            <i class="fas fa-wallet" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Financeiro</strong> – Controle receitas e despesas.
+          <div
+            style="background:var(--card); border-radius:var(--radius); padding:1.2rem; border:1px solid var(--border);">
+            <i class="fas fa-wallet" style="color:var(--red); margin-right:0.5rem;"></i> <strong>Financeiro</strong> –
+            Controle receitas e despesas.
           </div>
         </div>
       </div>
@@ -1646,17 +2171,20 @@
     <div class="container">
       <div class="text-center mb-12">
         <h2 class="section-title" style="animation: fade-slide-up 0.7s ease both;">Como funciona</h2>
-        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.1s both;">Três passos para ter o controle do seu negócio</p>
+        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.1s both;">Três passos para ter o controle do
+          seu negócio</p>
       </div>
       <div style="display:grid; grid-template-columns:1fr; gap:2.5rem; max-width:800px; margin:0 auto;">
         <!-- Passo 1 -->
-        <div class="reveal" style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
+        <div class="reveal"
+          style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
           <div style="flex:0 0 70px;">
             <div class="step-number">01</div>
           </div>
           <div style="flex:1;">
             <h3 style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem;">CADASTRE</h3>
-            <p style="color:var(--muted);">Produtos, clientes e informações do seu negócio. Tudo organizado em um só lugar.</p>
+            <p style="color:var(--muted);">Produtos, clientes e informações do seu negócio. Tudo organizado em um só
+              lugar.</p>
             <ul class="step-detail-list">
               <li><i class="fas fa-check-circle"></i> Cadastro rápido de produtos com preço, estoque e categoria</li>
               <li><i class="fas fa-check-circle"></i> Importação de clientes via planilha ou manualmente</li>
@@ -1666,15 +2194,18 @@
           </div>
         </div>
         <!-- Passo 2 -->
-        <div class="reveal" style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
+        <div class="reveal"
+          style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
           <div style="flex:0 0 70px;">
             <div class="step-number" style="color:var(--redLight);">02</div>
           </div>
           <div style="flex:1;">
             <h3 style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem;">CONTROLE</h3>
-            <p style="color:var(--muted);">Vendas, estoque e financeiro em tempo real. A Fox atualiza automaticamente cada movimento.</p>
+            <p style="color:var(--muted);">Vendas, estoque e financeiro em tempo real. A Fox atualiza automaticamente
+              cada movimento.</p>
             <ul class="step-detail-list">
-              <li><i class="fas fa-check-circle"></i> Registre vendas em segundos com cliente, produto e forma de pagamento</li>
+              <li><i class="fas fa-check-circle"></i> Registre vendas em segundos com cliente, produto e forma de
+                pagamento</li>
               <li><i class="fas fa-check-circle"></i> Estoque é atualizado automaticamente a cada venda</li>
               <li><i class="fas fa-check-circle"></i> Fluxo de caixa atualizado em tempo real</li>
               <li><i class="fas fa-check-circle"></i> Alertas de estoque baixo para não perder vendas</li>
@@ -1682,7 +2213,8 @@
           </div>
         </div>
         <!-- Passo 3 -->
-        <div class="reveal" style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
+        <div class="reveal"
+          style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:1.5rem; background:var(--card); border-radius:var(--radius); padding:1.5rem; border:1px solid var(--border);">
           <div style="flex:0 0 70px;">
             <div class="step-number" style="color:#EA580C;">03</div>
           </div>
@@ -1705,14 +2237,17 @@
   <section id="demonstracao" style="padding:4rem 1.5rem; background: var(--cardAlt);">
     <div class="container">
       <div class="text-center mb-12">
-        <div class="badge badge-purple" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-play"></i> demonstração</div>
-        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Veja a Fox funcionando.</h2>
-        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Assista ao vídeo e entenda como ela pode transformar sua gestão.</p>
+        <div class="badge badge-purple" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-play"></i>
+          demonstração</div>
+        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Veja o Sistema Fox funcionando.
+        </h2>
+        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Assista ao vídeo e entenda como ela
+          pode transformar sua gestão.</p>
       </div>
       <div class="reveal" style="max-width:700px; margin:0 auto;">
         <div class="video-wrapper">
           <video id="demoVideo" poster="" controls style="width:100%;">
-            <source src="video/demo.mp4" type="video/mp4" />
+            <source src="video/Demonstração-01.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos HTML5.
           </video>
           <div class="video-controls">
@@ -1720,11 +2255,12 @@
               <i class="fas fa-play" id="playBtn" style="font-size:0.9rem;"></i>
               <span id="currentTime">0:00</span>
             </div>
-            <span class="duration">/ 1:30</span>
+            <span class="duration">/ 5:07</span>
           </div>
         </div>
         <p style="color:var(--dimmed); font-size:0.8rem; text-align:center; margin-top:0.5rem;">
-          <i class="fas fa-info-circle"></i> Vídeo demonstrativo (coloque seu vídeo em <code style="background:var(--card);padding:0.1rem 0.4rem;border-radius:4px;">video/demo.mp4</code>)
+          <i class="fas fa-info-circle"></i> Vídeo demonstrativo (coloque seu vídeo em <code
+            style="background:var(--card);padding:0.1rem 0.4rem;border-radius:4px;">video/demo.mp4</code>)
         </p>
       </div>
     </div>
@@ -1734,9 +2270,12 @@
   <section id="recursos" style="padding:4rem 1.5rem; background: var(--bg);">
     <div class="container">
       <div class="text-center mb-12">
-        <div class="badge badge-blue" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-th-large"></i> sistema</div>
-        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Tudo o que você precisa para gerenciar seu negócio.</h2>
-        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Módulos integrados para você ter o controle total.</p>
+        <div class="badge badge-blue" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-th-large"></i>
+          sistema</div>
+        <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Tudo o que você precisa para
+          gerenciar seu negócio.</h2>
+        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Módulos integrados para você ter o
+          controle total.</p>
       </div>
       <div class="system-grid">
         <div class="system-card reveal">
@@ -1791,9 +2330,11 @@
   <!-- ═══ INTEGRAÇÃO (FLUXO) ═══ -->
   <section style="padding:4rem 1.5rem; background: var(--cardAlt);">
     <div class="container text-center">
-      <div class="badge badge-green" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-link"></i> integração</div>
+      <div class="badge badge-green" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-link"></i>
+        integração</div>
       <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Tudo conectado.</h2>
-      <p style="color:var(--muted); animation: fade-slide-up 0.7s ease 0.2s both;">Uma venda dispara uma cadeia de atualizações automáticas.</p>
+      <p style="color:var(--muted); animation: fade-slide-up 0.7s ease 0.2s both;">Uma venda dispara uma cadeia de
+        atualizações automáticas.</p>
 
       <div class="flow-container" id="flowContainer">
         <div class="flow-line">
@@ -1849,7 +2390,8 @@
       <div class="text-center mb-12">
         <div class="badge" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-tag"></i> plano</div>
         <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Escolha como começar.</h2>
-        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Acesso mensal, sem fidelidade. Cancele quando quiser.</p>
+        <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Acesso mensal, sem fidelidade.
+          Cancele quando quiser.</p>
       </div>
 
       <div class="pricing-single">
@@ -1860,7 +2402,8 @@
           <div class="price" style="margin:1.5rem 0 0.5rem;">
             <span class="new">R$ 9</span><span class="cents">,99</span>
             <span class="period">/mês</span>
-            <div style="font-size:0.7rem; color:var(--dimmed); margin-top:0.2rem;">Pagamento mensal • Sem fidelidade</div>
+            <div style="font-size:0.7rem; color:var(--dimmed); margin-top:0.2rem;">Pagamento mensal • Sem fidelidade
+            </div>
           </div>
           <ul>
             <li><i class="fas fa-check"></i> Controle de vendas</li>
@@ -1872,9 +2415,12 @@
             <li><i class="fas fa-check"></i> Suporte por e-mail</li>
             <li><i class="fas fa-check"></i> Atualizações gratuitas</li>
           </ul>
-          <button class="btn-primary" onclick="handleCheckout()" style="width:100%; justify-content:center;">
+          <a href="
+          https://pay.kiwify.com.br/9vnKpIq"><button class="btn-primary" 
+            style="width:100%; justify-content:center;">
             ASSINAR AGORA — R$ 9,99/MÊS
-          </button>
+          </button></a>
+
 
           <!-- Bônus: plataforma de cursos -->
           <div class="bonus-course">
@@ -1882,15 +2428,18 @@
             <div class="content">
               <h4>🎓 Acesso à Plataforma de Cursos</h4>
               <p>
-                Ao assinar, você ganha acesso completo à nossa <span class="highlight">plataforma de cursos</span> onde aprenderá 
-                <strong>passo a passo</strong> a usar o sistema, desde o cadastro até a geração de relatórios. 
-                Além disso, ensinamos como <strong>transferir seus dados de um dispositivo para outro com total segurança</strong> – 
+                Ao assinar, você ganha acesso completo à nossa <span class="highlight">plataforma de cursos</span> onde
+                aprenderá
+                <strong>passo a passo</strong> a usar o sistema, desde o cadastro até a geração de relatórios.
+                Além disso, ensinamos como <strong>transferir seus dados de um dispositivo para outro com total
+                  segurança</strong> –
                 sem perder nenhuma informação. Tudo isso com videoaulas práticas e suporte exclusivo.
               </p>
             </div>
           </div>
 
-          <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; margin-top:1.5rem; font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted);">
+          <div
+            style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; margin-top:1.5rem; font-family:'Space Mono',monospace; font-size:0.7rem; color:var(--muted);">
             <span><i class="fas fa-shield-alt" style="color:var(--green);"></i> Pagamento seguro</span>
             <span><i class="fas fa-bolt" style="color:var(--blue);"></i> Acesso imediato</span>
             <span><i class="fas fa-headset" style="color:var(--purple);"></i> Suporte dedicado</span>
@@ -1903,20 +2452,21 @@
   <!-- ═══ CTA DE OFERTA ═══ -->
   <section class="urgency text-center">
     <div class="container">
-      <div style="font-family:'Space Mono',monospace; font-size:0.65rem; font-weight:700; letter-spacing:0.1em; color:var(--green); text-transform:uppercase;">
+      <div
+        style="font-family:'Space Mono',monospace; font-size:0.65rem; font-weight:700; letter-spacing:0.1em; color:var(--green); text-transform:uppercase;">
         COMEÇE AGORA
       </div>
-      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(1.4rem,2.5vw,2.2rem); margin:0.5rem 0;">
+      <h2
+        style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(1.4rem,2.5vw,2.2rem); margin:0.5rem 0;">
         Tenha mais controle sobre seu negócio
       </h2>
       <p style="font-family:'Space Mono',monospace; color:var(--muted);">ACESSO COMPLETO POR APENAS R$9,99/MÊS</p>
-      <div style="font-family:'Space Mono',monospace; font-size:0.6rem; font-weight:700; background:var(--border); display:inline-block; padding:0.2rem 1.2rem; border-radius:30px; color:var(--redLight); margin:0.5rem 0 1.5rem;">
+      <div
+        style="font-family:'Space Mono',monospace; font-size:0.6rem; font-weight:700; background:var(--border); display:inline-block; padding:0.2rem 1.2rem; border-radius:30px; color:var(--redLight); margin:0.5rem 0 1.5rem;">
         SEM FIDELIDADE • CANCELE QUANDO QUISER
       </div>
       <div>
-        <button class="btn-primary" style="padding:1rem 3rem; font-size:1rem;" onclick="handleCheckout()">
-          Quero meu acesso agora
-        </button>
+       
       </div>
     </div>
   </section>
@@ -1925,42 +2475,57 @@
   <section id="faq" style="padding:4rem 1.5rem; background: var(--bg);">
     <div class="container" style="max-width:800px;">
       <div class="text-center mb-12">
-        <div class="badge badge-purple" style="animation: fade-slide-up 0.6s ease both;"><i class="fas fa-question-circle"></i> FAQ</div>
+        <div class="badge badge-purple" style="animation: fade-slide-up 0.6s ease both;"><i
+            class="fas fa-question-circle"></i> FAQ</div>
         <h2 class="section-title" style="animation: fade-slide-up 0.7s ease 0.1s both;">Perguntas frequentes</h2>
         <p class="section-sub" style="animation: fade-slide-up 0.7s ease 0.2s both;">Tire suas dúvidas sobre a Fox.</p>
       </div>
       <div style="display:grid; gap:0.75rem;">
         <div class="faq-item reveal">
           <button class="question" onclick="toggleFaq(this)">O que é a Fox? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">A Fox é um sistema de gestão para pequenos negócios que ajuda a controlar vendas, estoque, clientes, financeiro, metas, dashboard e relatórios em um único lugar.</div>
+          <div class="answer">A Fox é um sistema de gestão para pequenos negócios que ajuda a controlar vendas, estoque,
+            clientes, financeiro, metas, dashboard e relatórios em um único lugar.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">Para quem a Fox foi criada? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">Para empreendedores, revendedores, lojistas e pequenos negócios que querem organizar sua gestão de forma simples e eficiente.</div>
+          <button class="question" onclick="toggleFaq(this)">Para quem a Fox foi criada? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">Para empreendedores, revendedores, lojistas e pequenos negócios que querem organizar sua
+            gestão de forma simples e eficiente.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">A Fox funciona no celular? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">Sim! A Fox é acessível em qualquer dispositivo com navegador, incluindo celulares e tablets.</div>
+          <button class="question" onclick="toggleFaq(this)">A Fox funciona no celular? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">Sim! A Fox é acessível em qualquer dispositivo com navegador, incluindo celulares e
+            tablets.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">Preciso instalar algum programa? <i class="fas fa-chevron-down"></i></button>
+          <button class="question" onclick="toggleFaq(this)">Preciso instalar algum programa? <i
+              class="fas fa-chevron-down"></i></button>
           <div class="answer">Não. A Fox funciona diretamente no navegador, sem necessidade de instalação.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">A Fox possui controle de estoque? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">Sim! O módulo de estoque permite controlar entradas, saídas, alertas de reposição e histórico completo.</div>
+          <button class="question" onclick="toggleFaq(this)">A Fox possui controle de estoque? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">Sim! O módulo de estoque permite controlar entradas, saídas, alertas de reposição e
+            histórico completo.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">A Fox possui controle financeiro? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">Sim! Você pode registrar receitas, despesas, ver fluxo de caixa e ter uma visão clara da sua saúde financeira.</div>
+          <button class="question" onclick="toggleFaq(this)">A Fox possui controle financeiro? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">Sim! Você pode registrar receitas, despesas, ver fluxo de caixa e ter uma visão clara da
+            sua saúde financeira.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">Posso cancelar minha assinatura? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">Sim, você pode cancelar a qualquer momento, sem multa ou fidelidade. Seu acesso continua até o fim do período pago.</div>
+          <button class="question" onclick="toggleFaq(this)">Posso cancelar minha assinatura? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">Sim, você pode cancelar a qualquer momento, sem multa ou fidelidade. Seu acesso continua
+            até o fim do período pago.</div>
         </div>
         <div class="faq-item reveal">
-          <button class="question" onclick="toggleFaq(this)">A Fox é uma inteligência artificial? <i class="fas fa-chevron-down"></i></button>
-          <div class="answer">A Fox é uma assistente virtual que organiza seus dados e automatiza processos. Não é um chatbot, mas uma ferramenta inteligente para gestão.</div>
+          <button class="question" onclick="toggleFaq(this)">A Fox é uma inteligência artificial? <i
+              class="fas fa-chevron-down"></i></button>
+          <div class="answer">A Fox é uma assistente virtual que organiza seus dados e automatiza processos. Não é um
+            chatbot, mas uma ferramenta inteligente para gestão.</div>
         </div>
       </div>
     </div>
@@ -1970,8 +2535,10 @@
   <section style="padding:4rem 1.5rem; background: var(--cardAlt); text-align:center;">
     <div class="container" style="max-width:700px;">
       <div style="font-size:4rem; margin-bottom:1rem;">🦊</div>
-      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2rem,4vw,3rem);">Seu negócio. Seu controle. Sua Fox.</h2>
-      <p style="color:var(--muted); font-size:1.1rem; margin:1rem 0 2rem;">Tenha as principais ferramentas de gestão do seu negócio em um único lugar.</p>
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2rem,4vw,3rem);">Seu negócio.
+        Seu controle. Sua Fox.</h2>
+      <p style="color:var(--muted); font-size:1.1rem; margin:1rem 0 2rem;">Tenha as principais ferramentas de gestão do
+        seu negócio em um único lugar.</p>
       <button class="btn-primary" style="padding:1rem 3rem; font-size:1.1rem;" onclick="handleCheckout()">
         COMEÇAR AGORA
       </button>
@@ -1982,18 +2549,24 @@
   <footer>
     <div class="inner">
       <div>
-        <div class="brand"><i class="fas fa-fox" style="font-size:1.4rem;"></i> FOX <span style="color:var(--red);">Assistente Virtual</span></div>
-        <p style="color:var(--dimmed); font-size:0.9rem; max-width:300px; margin-top:0.5rem;">Simplificando a gestão de quem faz a economia girar.</p>
+        <div class="brand"><i class="fas fa-fox" style="font-size:1.4rem;"></i> FOX <span
+            style="color:var(--red);">Assistente Virtual</span></div>
+        <p style="color:var(--dimmed); font-size:0.9rem; max-width:300px; margin-top:0.5rem;">Simplificando a gestão de
+          quem faz a economia girar.</p>
       </div>
       <div class="links">
-        <h4 style="font-family:'Space Mono',monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);">Links</h4>
+        <h4
+          style="font-family:'Space Mono',monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);">
+          Links</h4>
         <a href="#hero">Início</a>
         <a href="#recursos">Recursos</a>
         <a href="#planos">Planos</a>
         <a href="#faq">FAQ</a>
       </div>
       <div class="links">
-        <h4 style="font-family:'Space Mono',monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);">Social</h4>
+        <h4
+          style="font-family:'Space Mono',monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted);">
+          Social</h4>
         <div class="social">
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
